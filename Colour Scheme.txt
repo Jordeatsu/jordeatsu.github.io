@@ -1,0 +1,5 @@
+Green           #4CAf50
+Dark Blue       #003DAF
+Medium Blue     #0099FF
+Pale Blue       #BEF0EF
+Off White       #f9f9f9

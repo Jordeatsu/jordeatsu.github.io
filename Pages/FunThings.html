@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xander Sucks!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../Additional_Features/bootbox.min.js"></script>
+    <link rel="shortcut icon" href="../Images/P&G Logo.png" type="image/png"/>
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/Jordan_Stylesheet.css">
+    <script>
+        $(document).ready(function(){
+            $('#request').on("click", function() {
+                var dialog = bootbox.dialog({
+                    title: '<p style="text-align: center">Access Request<p>',
+                    message: '<p style="text-align: center"><i class="fa fa-spin fa-spinner"></i>Your Access Request is Pending</p>',
+                    onEscape: true,
+                    backdrop: true
+                });
+                dialog.init(function(){
+                    setTimeout(function(){
+                        dialog.find('.bootbox-body').html('<p style="text-align: center"><i class="fa fa-spin fa-spinner"></i>Your Access Request is Denied, soz</p>');
+                    }, 5000);
+                });
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="navigation">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="">SecondLink</a></li>
+            <li><a href="">ThirdLink</a></li>
+            <li><a href="FunThings.html" class="active">All Of The Fun Things!</a></li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>403! 403! 403!<br>Unfortunately you don't have access to view this page</h1>
+    </div>
+    <div id="centralAccess" >
+        <h1>Click to gain access!</h1><br><br>
+        <button type="button" class="btn btn-primary btn-lg" style="width: 80%" id="request">Request Access</button>
+    </div>
+</body>
+
+</html>
