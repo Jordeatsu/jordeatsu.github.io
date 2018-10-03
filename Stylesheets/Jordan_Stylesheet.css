@@ -24,12 +24,30 @@ body{
     background: #f9f9f9;
     width: 70%;
     margin: auto;
-    height: 100vh;
+    height: 100%;
+    border-radius: 25px;
+    padding-top: 15px;
+    min-width: 900px;
+}
+
+#title {
+    width: 100%;
+    text-align: center;
+}
+
+#courseSelection {
+    width: 500px;
+    padding:5px;
+    float: left;
+    text-align: center;
+    background: #BEF0EF;
+}
+
+.selectionItem{
+    width: 100%;
 }
 
 .title {
     text-align: center;
     color: #f9f9f9;
-    border-radius: 25px;
-    
 }
