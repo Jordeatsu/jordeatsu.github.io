@@ -27,7 +27,7 @@ body{
     height: 100%;
     border-radius: 25px;
     padding-top: 15px;
-    min-width: 900px;
+    min-width: auto;
 }
 
 #title {
