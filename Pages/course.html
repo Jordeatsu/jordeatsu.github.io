@@ -9,18 +9,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
     <link rel="shortcut icon" href="../Images/P&G Logo.png" type="image/png"/>
     <link rel="stylesheet" type="text/css" href="../Stylesheets/Jordan_Stylesheet.css">
-    <script>
-        $(".carousel").swipe({
-
-            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-            if (direction == 'left') $(this).carousel('next');
-            if (direction == 'right') $(this).carousel('prev');
-        },
-            allowPageScroll:"vertical"
-        });
+    <script src="../Additional_Features/bootstrap-touch-slider.js"></script>    
+    <script type="text/javascript">
+        $('#myCarousel').bsTouchSlider();
     </script>
 </head>
 <body>
