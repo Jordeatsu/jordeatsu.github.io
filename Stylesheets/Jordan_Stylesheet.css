@@ -65,3 +65,9 @@ body{
     text-align: center;
     color: #f9f9f9;
 }
+#content1, #content2, #content3, #content4, #content5, #content6{
+    display: none;
+    width: 90%;
+    height: auto;
+    margin:auto;
+}
