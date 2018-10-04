@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 *{
     font-family: 'Varela Round', sans-serif;
+    flex: 0 0 auto;
 }
+
 body{
     background: #003DAF;
     background: -webkit-linear-gradient(-135deg, #f9f9f9, #003DAF);
@@ -10,6 +12,7 @@ body{
     background: linear-gradient(-135deg, #f9f9f9, #003DAF);
     height: 100vh;
 }
+
 #centralAccess {
     background: #f9f9f9;
     height:35%;
@@ -20,6 +23,7 @@ body{
     text-align: center;
     padding: 5%;
 }
+
 #main {
     background: #f9f9f9;
     width: 70%;
