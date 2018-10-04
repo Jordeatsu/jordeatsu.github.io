@@ -39,7 +39,7 @@ body{
     min-width:300px;
     margin: auto;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     padding-bottom: 10px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
@@ -65,7 +65,15 @@ body{
     text-align: center;
     color: #f9f9f9;
 }
+
 #content1, #content2, #content3, #content4, #content5, #content6{
+    display: none;
+    width: 90%;
+    height: auto;
+    margin:auto;
+}
+
+#name1, #name2, #name3, #name4, #name5, #name6{
     display: none;
     width: 90%;
     height: auto;
