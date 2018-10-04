@@ -10,7 +10,11 @@ body{
     background: -o-linear-gradient(-135deg, #f9f9f9, #003DAF);
     background: -moz-linear-gradient(-135deg, #f9f9f9, #003DAF);
     background: linear-gradient(-135deg, #f9f9f9, #003DAF);
-    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
 }
 
 #centralAccess {
@@ -33,6 +37,7 @@ body{
     padding-top: 15px;
     min-width: 95%;
     margin-top: 5px;
+    padding-bottom: 15px;
 }
 
 #title {
