@@ -89,3 +89,7 @@ body{
     margin-bottom: 12px; /* Add some space below the input */
     margin-top:12px;
 }
+
+#table1, #table2 {
+    max-height: 400px;
+}
