@@ -40,7 +40,7 @@ body{
     min-width:300px;
     margin: auto;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     padding-bottom: 10px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
@@ -74,21 +74,35 @@ body{
     margin:auto;
 }
 
-#name1, #name2, #name3, #name4, #name5, #name6{
+#name1, #name2, #name3, #name4, #name5, #name6, #group1, #group2{
     display: none;
     width: 90%;
     height: auto;
     margin:auto;
 }
 
+
+
 #myInput1, #myInput2, #myInput3, #myInput4 {
-    background-image: url("../Images/SearchIcon.png"); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    background-image: url("../Images/SearchIcon.png"); 
+    background-position: 10px 12px; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
     margin-top:12px;
+}
+
+#myTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 40px; 
+    right: 15px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    padding: 15px; 
+    width: 65px;
 }
