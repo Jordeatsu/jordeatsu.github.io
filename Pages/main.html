@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../Images/P&G Logo.png" type="image/png"/>
     <link rel="stylesheet" type="text/css" href="../Stylesheets/Jordan_Stylesheet.css">
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myTopBtn").style.display = "block";
+            } else {
+                document.getElementById("myTopBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </head>
 
 <body>
@@ -78,10 +96,24 @@
         <div class="row">
             <div class="col-md-6" style="text-align: center">
                 <h5>Map of Leeds</h5>
-                <iframe width="100%" height="300px" border-radius="10px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=doubletree%20by%20hilton%2C%20Neville%20St%2C%20Leeds%20LS1%204BX+(IT%20Conference)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <iframe width="100%" height="500px" border-radius="10px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=doubletree%20by%20hilton%2C%20Neville%20St%2C%20Leeds%20LS1%204BX+(IT%20Conference)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                 </iframe>
             </div>
+            <div class="col-md-6" style="text-align: center">
+                <h5>Yammer</h5>
+                <div id="embedded-feed" style="height:500px;"></div>
+                <script type="text/javascript" src="https://s0.assets-yammer.com/assets/platform_embed.js"></script>
+                <script type="text/javascript">
+                yam.connect.embedFeed({
+                  container: "#embedded-feed",
+                  network: "pg.com",
+                  feedType: "group",
+                  feedId: "15325592"
+                });
+                </script>            
+            </div>
         </div>
+        <img src="../Images/up.png" onclick="topFunction()" id="myTopBtn" title="Go to top">
     </div>   
 </body>
 </html>
