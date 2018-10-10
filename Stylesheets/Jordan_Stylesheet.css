@@ -64,31 +64,6 @@
   width: 100%;
 }
 
-.denied__link {
-  background: none;
-  color: #fff;
-  padding: 12px 0px 10px 0px;
-  border: 1px solid #fff;
-  outline: none;
-  border-radius: 7px;
-  width: 150px;
-  font-size: 15px;
-  text-align: center;
-  margin: 0 auto;
-  vertical-align: middle;
-  display: block;
-  margin-bottom: 40px;
-  margin-top: 25px;
-  font-weight: 400;
-}
-
-.denied__link:hover {
-  color: #ffbb39;
-  border-color: #ffbb39;
-  cursor: pointer;
-  opacity: 1;
-}
-
 .permission_denied .stars {
   animation: sparkle 1.6s infinite ease-in-out alternate;
 }
