@@ -28,29 +28,39 @@
             var group1 = document.getElementById("group1");
             var name2 = document.getElementById("name2");
             var group2 = document.getElementById("group2");
+
             if(day == 2) {
                 option = option + 2;
             }
+            console.log(option);
             if (option == 1) {
                 name1.style.display = "block";
                 group1.style.display = "none";
                 name2.style.display = "none";
                 group2.style.display = "none";
+                document.getElementById("sbname").className = "btn btn-secondary";
+                document.getElementById("sbgroup").className = "btn btn-primary";
             } else if (option == 2) {
                 name1.style.display = "none";
                 group1.style.display = "block";
                 name2.style.display = "none";
                 group2.style.display = "none";
+                document.getElementById("sbname").className = "btn btn-primary";
+                document.getElementById("sbgroup").className = "btn btn-secondary";
             } else if (option == 3) {
                 name1.style.display = "none";
                 group1.style.display = "none";
                 name2.style.display = "block";
                 group2.style.display = "none";
+                document.getElementById("sbname").className = "btn btn-secondary";
+                document.getElementById("sbgroup").className = "btn btn-primary";
             } else if (option == 4) {
                 name1.style.display = "none";
                 group1.style.display = "none";
                 name2.style.display = "none";
                 group2.style.display = "block";
+                document.getElementById("sbname").className = "btn btn-primary";
+                document.getElementById("sbgroup").className = "btn btn-secondary";
             } else {
                 name1.style.display = "none";
                 group1.style.display = "none";
