@@ -5,11 +5,14 @@
     <meta charset="utf-8">
     <script src="../Additional_Features/bootbox.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>$.mobileBackCompat = false;</script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../Images/P&G Logo.png" type="image/png"/>
     <link rel="stylesheet" type="text/css" href="../Stylesheets/Jordan_Stylesheet.css">
+    
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
@@ -27,6 +30,19 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+    </script>
+    <script>
+        $(document).ready(function(){
+            var swipeCounter = 0;
+            $('#ee').on('click', function(){
+                $('#eaeg').trigger('focus');
+            });
+            $('body').on('swipeleft', function(){
+                alert("you swiped left");
+                swipeCounter++;
+                console.log(swipeCounter);
+            });
+        });
     </script>
 </head>
 
@@ -71,7 +87,22 @@
         <br>
         <div class="row">
             <div class="col">
-                <h4>what is the face-to-face?</h4>
+                <h4>what is the face-to-face<span data-toggle="modal" data-target="#eaeg" id="ee">?</span></h4>
+                <div class="modal fade" id="eaeg" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="ModalLabel">You've Found Easter Egg Number 1!</h5>
+                        </div>
+                        <div class="modal-body">
+                          <img src="../Images/Unicorn 2.png" style="width: 100%;">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 <p style="text-align: justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere turpis id libero volutpat lobortis. Fusce eleifend malesuada dolor, vitae tristique lorem condimentum non. Donec lorem neque, suscipit at fermentum vel, interdum ac risus. Morbi vitae eleifend ligula. Aliquam sit amet malesuada lacus. Aenean erat est, sodales id posuere vel, tempor in massa. Nunc eget ultrices est, ac hendrerit urna. Donec porttitor risus a bibendum lacinia. Sed nec nulla ut orci efficitur scelerisque quis non massa. Aliquam malesuada neque a augue commodo, vel egestas nisl varius. Donec ultrices ipsum nisl, finibus tincidunt nibh vulputate ut. Phasellus interdum, urna ut vestibulum ultricies, dui ipsum ornare ipsum, ut dictum dui velit nec tellus. Donec eu ligula lorem. Donec eu erat vitae ex molestie pulvinar eget quis sem. Sed rhoncus sapien eu arcu feugiat faucibus.
                 </p>

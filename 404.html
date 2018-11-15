@@ -11,6 +11,13 @@
     <link rel="shortcut icon" href="./Images/P&G Logo.png" type="image/png"/>
     <link rel="stylesheet" type="text/css" href="./Stylesheets/Jordan_Stylesheet.css">
     <script>
+        $(document).ready(function(){
+            $('#astronaut').on('click', function(){
+                $('#eaeg').trigger('focus');
+            });
+        });
+    </script>
+    <script>
         var particles = {
             "particles": {
                 "number": {
@@ -162,7 +169,23 @@
             <div class="denied__wrapper">
               <h1>404</h1>
               <h3>LOST IN <span>SPACE</span> well, just lost? Hmm, looks like that page doesn't exist.</h3>
-              <svg id="astronaut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <div class="modal fade" id="eaeg" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="ModalLabel">You've Found Easter Egg Number 3!</h5>
+                        </div>
+                        <div class="modal-body">
+                          <img src="Images/Unicorn 2.png" style="width: 100%;">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              <svg id="astronaut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-toggle="modal" data-target="#eaeg">
+                
               <style>
                 .st0{fill:none;} .st1{fill:#504E55;} .st2{fill:#F39E72;} .st3{fill:#FFFFFF;} .st4{opacity:0.24;} .st5{fill:#77574E;} .st6{fill:#FBD68D;} .st7{fill:#ECECEC;} .st8{fill:#F4A89C;} .st9{fill:#CFC9E5;} .st10{opacity:0.28;} .st11{opacity:0.25;} .st12{fill:#6F635C;} .st13{fill:#DAE7BE;} .st14{fill:#FFE0A6;} .st15{fill:#5F5E60;} .st16{fill:#CFE1AF;} .st17{fill:#EBE9F5;} .st18{fill:#53515A;} .st19{opacity:0.42;} .st20{fill:#53515B;}
               </style>
