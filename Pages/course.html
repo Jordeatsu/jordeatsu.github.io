@@ -17,8 +17,8 @@
 
             console.log(i);
             $('#ee').on('click', function(){
-                alert("yo yo yo");
-            })
+                $('#eaeg').trigger('focus');
+            });
             $('#content1').css('display', 'block');
             $('#name1').css('display', 'block');
             $('#next').on('click', function(){
@@ -319,7 +319,22 @@
                         </tr>
                         <tr>
                             <td>FSS</td>
-                            <td id="ee">Jordan Weatherley</td>
+                            <td id="ee" data-toggle="modal" data-target="#eaeg">Jordan Weatherley</td>
+                            <div class="modal fade" id="eaeg" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="ModalLabel">You've Found Easter Egg Number 2!</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="../Images/Unicorn 2.png" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </tr>
                         <tr>
                             <td>Market Measurements</td>
