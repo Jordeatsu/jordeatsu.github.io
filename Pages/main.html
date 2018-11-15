@@ -35,63 +35,35 @@
         $(document).ready(function(){
             var left = 0;
             var right = 0;
-            var up = 0;
-            var down = 0;
+
             $('#ee').on('click', function(){
                 $('#eaeg').trigger('focus');
             });
             $('body').touchwipe({
                 wipeLeft: function() {
                     left = left + 1;
-                    if (left > 2 || right > 1 || up > 2 || down > 3) {
+                    if (left > 1 || right > 1) {
                         left = 0;
                         right = 0;
                         up = 0;
                         down = 0;
                     }
-                    console.log(left + " " + right + " " + up + " " + down);
-                    if ((left === 2) && (right === 1) && (up === 2) && (down === 3)) {
+                    console.log(left + " " + right);
+                    if ((left === 1) && (right === 1)) {
                         $('#eaeg2').modal('show');
                     }
                 },
                 wipeRight: function() {
                     right = right + 1;
-                    if (left > 2 || right > 1 || up > 2 || down > 3) {
+                    if (left > 1 || right > 1) {
                         left = 0;
                         right = 0;
                         up = 0;
                         down = 0;
                     }
-                    console.log(left + " " + right + " " + up + " " + down);
+                    console.log(left + " " + right);
 
-                    if ((left === 2) && (right === 1) && (up === 2) && (down === 3)) {
-                        $('#eaeg2').modal('show');
-                    }
-                },
-                wipeUp: function() {
-                    up = up + 1;
-                    if (left > 2 || right > 1 || up > 2 || down > 3) {
-                        left = 0;
-                        right = 0;
-                        up = 0;
-                        down = 0;
-                    }
-                    console.log(left + " " + right + " " + up + " " + down);
-
-                    if ((left === 2) && (right === 1) && (up === 2) && (down === 3)) {
-                        $('#eaeg2').modal('show');
-                    }
-                },
-                wipeDown: function() {
-                    down = down + 1;
-                    if (left > 2 || right > 1 || up > 2 || down > 3) {
-                        left = 0;
-                        right = 0;
-                        up = 0;
-                        down = 0;
-                    }
-                    console.log(left + " " + right + " " + up + " " + down);
-                    if ((left === 2) && (right === 1) && (up === 2) && (down === 3)) {
+                    if ((left === 1) && (right === 1)) {
                         $('#eaeg2').modal('show');
                     }
                 },
