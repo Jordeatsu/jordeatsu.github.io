@@ -64,6 +64,30 @@
                     }
                 }
             });
+            var fullDate = new Date();
+            console.log(fullDate);
+            var twoDigitMonth = fullDate.getMonth()+1+"";
+            console.log(twoDigitMonth);
+            if(twoDigitMonth.length==1) {
+                twoDigitMonth="0" +twoDigitMonth;
+            }	
+            var twoDigitDate = fullDate.getDate()+"";
+            if(twoDigitDate.length==1) {
+                twoDigitDate="0" +twoDigitDate;
+            }	
+            var currentDate = twoDigitDate + "/" + twoDigitMonth + "/" + fullDate.getFullYear();
+            console.log(currentDate);
+            
+            if (currentDate == "28/11/2018") {
+                $('#day1').css('display', 'none');
+                $('#day3').css('display', 'none');
+            } else if (currentDate == "29/11/2018") {
+                $('#day1').css('display', 'none');
+                $('#day2').css('display', 'none');
+            } else {
+                $('#day2').css('display', 'none');
+                $('#day3').css('display', 'none');
+            }
         });
     </script>
 </head>
@@ -106,54 +130,191 @@
         <br>
         <div class="row">
             <div class="col">
-                <h4>what is the face-to-face<span data-toggle="modal" data-target="#eaeg" id="ee">?</span></h4>
                 <div class="modal fade" id="eaeg" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="ModalLabel">You've Found Easter Egg Number 1!</h5>
-                        </div>
-                        <div class="modal-body">
-                          <img src="../Images/Unicorn 2.png" style="width: 100%;">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal fade" id="eaeg2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
+                        <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="ModalLabel">You've Found Easter Egg Number 4!</h5>
+                                <h5 class="modal-title" id="ModalLabel">You've Found Easter Egg Number 1!</h5>
                             </div>
                             <div class="modal-body">
-                              <img src="../Images/Unicorn 2.png" style="width: 100%;">
+                                <img src="../Images/Unicorn 2.png" style="width: 100%;">
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
-                          </div>
+                            </div>
                         </div>
-                      </div>
-                <p style="text-align: justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere turpis id libero volutpat lobortis. Fusce eleifend malesuada dolor, vitae tristique lorem condimentum non. Donec lorem neque, suscipit at fermentum vel, interdum ac risus. Morbi vitae eleifend ligula. Aliquam sit amet malesuada lacus. Aenean erat est, sodales id posuere vel, tempor in massa. Nunc eget ultrices est, ac hendrerit urna. Donec porttitor risus a bibendum lacinia. Sed nec nulla ut orci efficitur scelerisque quis non massa. Aliquam malesuada neque a augue commodo, vel egestas nisl varius. Donec ultrices ipsum nisl, finibus tincidunt nibh vulputate ut. Phasellus interdum, urna ut vestibulum ultricies, dui ipsum ornare ipsum, ut dictum dui velit nec tellus. Donec eu ligula lorem. Donec eu erat vitae ex molestie pulvinar eget quis sem. Sed rhoncus sapien eu arcu feugiat faucibus.
+                    </div>
+                    <div class="modal fade" id="eaeg2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">You've Found Easter Egg Number 4!</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../Images/Unicorn 2.png" style="width: 100%;">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <h4 style="text-align: center">Welcome to the UKITVersity 2018 Event<span data-toggle="modal" data-target="#eaeg" id="ee">!</span></h4>
+                <p style="text-align: center">
+                    This event is aimed at building the community's capability for the future with external qualifications, as well as giving you a change to strengthen your networks.<br>
+                    Remember to have fun along the way!
                 </p>
             </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-md-6">
-                <h4>what is the purpose of this application?</h4>
-                <p style="text-align: justify">  
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere turpis id libero volutpat lobortis. Fusce eleifend malesuada dolor, vitae tristique lorem condimentum non. Donec lorem neque, suscipit at fermentum vel, interdum ac risus. Morbi vitae eleifend ligula. Aliquam sit amet malesuada lacus. Aenean erat est, sodales id posuere vel, tempor in massa. Nunc eget ultrices est, ac hendrerit urna. Donec porttitor risus a bibendum lacinia. Sed nec nulla ut orci efficitur scelerisque quis non massa. Aliquam malesuada neque a augue commodo, vel egestas nisl varius. Donec ultrices ipsum nisl, finibus tincidunt nibh vulputate ut. Phasellus interdum, urna ut vestibulum ultricies, dui ipsum ornare ipsum, ut dictum dui velit nec tellus. Donec eu ligula lorem. Donec eu erat vitae ex molestie pulvinar eget quis sem. Sed rhoncus sapien eu arcu feugiat faucibus.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h4>something something something</h4>
-                <p style="text-align: justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere turpis id libero volutpat lobortis. Fusce eleifend malesuada dolor, vitae tristique lorem condimentum non. Donec lorem neque, suscipit at fermentum vel, interdum ac risus. Morbi vitae eleifend ligula. Aliquam sit amet malesuada lacus. Aenean erat est, sodales id posuere vel, tempor in massa. Nunc eget ultrices est, ac hendrerit urna. Donec porttitor risus a bibendum lacinia. Sed nec nulla ut orci efficitur scelerisque quis non massa. Aliquam malesuada neque a augue commodo, vel egestas nisl varius. Donec ultrices ipsum nisl, finibus tincidunt nibh vulputate ut. Phasellus interdum, urna ut vestibulum ultricies, dui ipsum ornare ipsum, ut dictum dui velit nec tellus. Donec eu ligula lorem. Donec eu erat vitae ex molestie pulvinar eget quis sem. Sed rhoncus sapien eu arcu feugiat faucibus.
+            <div class="col-md-12">
+                <h4>Event Timetable</h4>
+                    <table class="table table-hover table-striped" style="text-align: center;" id="day1">
+                        <thead>
+                            <tr>
+                                <td>Topic</td>
+                                <td>Leader</td>
+                                <td>Start</td>
+                                <td>End</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arrive & Brunch</td>
+                                <td>Liam & Ian</td>
+                                <td>11:00</td>
+                                <td>12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Intro & Kick Off</td>
+                                <td>Seb & Elena</td>
+                                <td>12:00</td>
+                                <td>12:30</td>
+                            </tr>
+                            <tr>
+                                <td>Training Session 1</td>
+                                <td>Course Leader</td>
+                                <td>12:30</td>
+                                <td>17:30</td>
+                            </tr>
+                            <tr>
+                                <td>Logistics Briefing</td>
+                                <td>Liam & Ian</td>
+                                <td>17:30</td>
+                                <td>17:35</td>
+                            </tr>
+                            <tr>
+                                <td>Fun Plans</td>
+                                <td>Sinéad</td>
+                                <td>17:35</td>
+                                <td>???</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-hover table-striped" style="text-align: center" id="day2">
+                        <thead>
+                            <tr>
+                                <td>Topic</td>
+                                <td>Leader</td>
+                                <td>Start</td>
+                                <td>End</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Breakfast</td>
+                                <td>Sinéad</td>
+                                <td>08:00</td>
+                                <td>09:00</td>
+                            </tr>
+                            <tr>
+                                <td>Training Session 2</td>
+                                <td>Course Leader</td>
+                                <td>09:00</td>
+                                <td>12:30</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch</td>
+                                <td>Liam & Ian</td>
+                                <td>12:30</td>
+                                <td>13:30</td>
+                            </tr>
+                            <tr>
+                                <td>IT Career Modal</td>
+                                <td>Supraja</td>
+                                <td>13:30</td>
+                                <td>14:30</td>
+                            </tr>
+                            <tr>
+                                <td>Training Session 3</td>
+                                <td>Course Leaders</td>
+                                <td>14:30</td>
+                                <td>17:30</td>
+                            </tr>
+                            <tr>
+                                <td>Logistics Briefing</td>
+                                <td>Liam & Ian</td>
+                                <td>17:30</td>
+                                <td>17:35</td>
+                            </tr>
+                            <tr>
+                                <td>Fun Plans</td>
+                                <td>Sinéad</td>
+                                <td>17:35</td>
+                                <td>???</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-hover table-striped" style="text-align: center" id="day3">
+                        <thead>
+                            <tr>
+                                <td>Topic</td>
+                                <td>Leader</td>
+                                <td>Start</td>
+                                <td>End</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Breakfast</td>
+                                <td>Sinéad</td>
+                                <td>08:00</td>
+                                <td>09:00</td>
+                            </tr>
+                            <tr>
+                                <td>Training Session 4</td>
+                                <td>Course Leader</td>
+                                <td>09:00</td>
+                                <td>12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch</td>
+                                <td>Liam & Ian</td>
+                                <td>12:00</td>
+                                <td>13:00</td>
+                            </tr>
+                            <tr>
+                                <td>Training Session 5</td>
+                                <td>Course Leader</td>
+                                <td>13:00</td>
+                                <td>14:30</td>
+                            </tr>
+                            <tr>
+                                <td>Exam Logistics</td>
+                                <td>Supraja & Duncan</td>
+                                <td>14:30</td>
+                                <td>14:45</td>
+                            </tr>
+                            <tr>
+                                <td>Close</td>
+                                <td>Seb</td>
+                                <td>14:45</td>
+                                <td>15:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </p>
             </div>
         </div>
@@ -164,12 +325,12 @@
                 <div id="embedded-feed" style="height:500px;"></div>
                 <script type="text/javascript" src="https://s0.assets-yammer.com/assets/platform_embed.js"></script>
                 <script type="text/javascript">
-                yam.connect.embedFeed({
-                  container: "#embedded-feed",
-                  network: "pg.com",
-                  feedType: "group",
-                  feedId: "15325592"
-                });
+                    yam.connect.embedFeed({
+                        container: "#embedded-feed",
+                        network: "pg.com",
+                        feedType: "group",
+                        feedId: "15325592"
+                    });
                 </script>            
             </div>
         </div>
