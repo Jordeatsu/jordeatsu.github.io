@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Proctor & Gamble IT Face-to-Face</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="../Additional_Features/bootbox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../Images/P&G Logo.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/Jordan_Stylesheet.css">
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myTopBtn").style.display = "block";
+            } else {
+                document.getElementById("myTopBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+
+    <style>
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23146eff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23146eff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-indicators li {
+        background-color: #999;
+        background-color: rgba(70,70,70,.25);
+    }
+
+    .carousel-indicators {
+        bottom:-50px;
+    }
+
+    .carousel-inner {
+        margin-bottom:50px;
+    }
+
+    .carousel-indicators .active {
+        background-color: #444;
+    }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark">
+        <a class="navbar-brand" href="main">
+            <img src="../Images/P&G Logo.png" style="height:35px;">
+            P&G IT Face-to-Face
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="game">Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course">Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="daytoday">Day to Day Groups</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="social-main">Social Hub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forum">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="403">In Development</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="background: #f9f9f9; border-radius: 10px; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); margin-top: 10px; margin-bottom: 40px;">
+        <div class="row" style="text-align: center">
+            <div class="col">
+                <h1>UK IT F2F - Social</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row text-md-left text-center">
+            <div class="col">
+                <h4>Bars & Clubs</h4>
+                <p>
+                    This page contains information of the nightlife places of interest in Leeds.
+                </p>
+                <a href="social-main.html" class="btn btn-primary text-left" role="button">
+                    Return To Main Social Page
+                </a>
+            </div>
+        </div>
+        <br>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h5 class="text-center">Pubs/Bars</h5>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brewdog</h5>
+                                    <p class="card-text">A stone’s throw from the River Aire, BrewDog Leeds features a fusion of redbrick and metal, chalk art and concrete, and majors in fresh, amazing craft beer for the people of Leeds.</p>
+                                    <a href="https://www.brewdog.com/bars/uk/leeds" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/brewdog-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Distrikt</h5>
+                                    <p class="card-text">Distrikt is a unique, intimate, underground bar in Leeds. Let our award-winning chefs serve you freshly made tapas using locally sourced ingredients.</p>
+                                    <a href="https://www.distrikt.co.uk/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/distrikt-image.jpg" alt="Bar">
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Head of Steam</h5>
+                                    <p class="card-text">They offer a great range of craft, cask, world beers and ciders along with a premium range of spirits.</p>
+                                    <a href="http://www.theheadofsteam.co.uk/bars/leeds" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/headofsteam-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        <h5 class="text-center">Cocktail Bars</h5>
+                    <div class="row">
+                            
+                        <div class="col">
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Maven</h5>
+                                    <p class="card-text">A cool and vibrant two floor restaurant and cocktail bar situated in a victorian building.</p>
+                                    <a href="https://www.themavenbar.com/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/maven-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Alchemist</h5>
+                                    <p class="card-text">The Alchemist is one of Leeds' best bars, serving cocktails second to none. The exciting drinks menu ensures a lively atmosphere late into the night!</p>
+                                    <a href="https://thealchemist.uk.com/venues/trinity-leeds/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/alchemist-image.jpeg" alt="Bar" >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Thewlis Cocktail Lounge</h5>
+                                    <p class="card-text">Simply designed restaurant and cookery school for vegetarian food or full-meal thali for 6 or more.</p>
+                                    <a href="http://www.thewliscocktails.co.uk/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/thewlis-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        <h5 class="text-center">Clubs & Late Night</h5>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Call Lane</h5>
+                                    <p class="card-text">Call Lane is Leeds' most famous nightspot – but where should you go? Here's a list of the ultimate guide – check it out.</p>
+                                    <a href="https://leeds-list.com/food-and-drink/the-ultimate-guide-to-call-lane/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/call-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Neon Cactus</h5>
+                                    <p class="card-text">A late night mexican themed bar that also offers food during the earlier hours.</p>
+                                    <a href="https://neoncactus.co.uk/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/neon-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">HiFi</h5>
+                                    <p class="card-text"> Offers a range of DJ led and live music nights based around a variety of musical genres including Soul, Funk, Hip Hop, Reggae and Disco, sitting alongside their ever popular Saturday evening Comedy Sessions.</p>
+                                    <a href="http://www.thehificlub.co.uk/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/hifi-image.png" alt="Bar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <img src="../Images/up.png" onclick="topFunction()" id="myTopBtn" title="Go to top">
+    </div>
+
+
+</body>
+
+
+</html>

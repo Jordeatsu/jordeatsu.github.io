@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Proctor & Gamble IT Face-to-Face</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="../Additional_Features/bootbox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../Images/P&G Logo.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/Jordan_Stylesheet.css">
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myTopBtn").style.display = "block";
+            } else {
+                document.getElementById("myTopBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark">
+        <a class="navbar-brand" href="main">
+            <img src="../Images/P&G Logo.png" style="height:35px;">
+            P&G IT Face-to-Face
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="game">Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course">Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="daytoday">Day to Day Groups</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Social Hub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forum">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="403">In Development</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="background: #f9f9f9; border-radius: 10px; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); margin-top: 10px; margin-bottom: 40px;">
+        <div class="row" style="text-align: center">
+            <div class="col">
+                <h1>UK IT F2F - Social Page</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row text-md-left text-center">
+            <div class="col">
+                <h4>Social Information</h4>
+                <p>
+                    This page contains information on the individual social activities and places of interest in Leeds.
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-md-left text-center">
+            <div class="col">
+                
+                <h4>Activities</h4>
+                <p>Click an activity to expand.</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light text-left btn-block" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Crazy Golf
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../Images/crazygolf-image.jpg" class="rounded float-left img-thumbnail img-responsive"
+                                        alt="Crazy Golf">
+                                </div>
+
+                                <div class="card-body col-md-8">
+                                    <h5><b>Junkyard Golf Club</b></h5>
+                                    <p><b>Description: </b>Get excited on three mashed up 9-hole crazy golf courses
+                                        created from pre-loved and reclaimed random shizzle. Groups can putt their way
+                                        through all sorts of bizarre holes; think UV garage, scrapyard slides, circus
+                                        freaks and jungle bathtubs.</p>
+                                    <p><b>Food/Drink: </b>The bars offer a wide range of beer, cider, wine, spirits and
+                                        cocktails. For food grab a snack from the main bunker bar, they serve
+                                        fairground style hotdogs, nachos and popcorn! <b>Limited Vegan/Vegetarian
+                                            Options</b></p>
+                                    <p><b>Address: </b>The Light the Headrow, LS1 8TL</p>
+                                    <a href="https://www.junkyardgolfclub.co.uk/leeds/" class="btn btn-primary text-left" role="button" target="_blank">
+                                        Link
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Karaoke
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../Images/karaoke-image.jpg" class="rounded float-left img-thumbnail img-responsive"
+                                        alt="Karaoke">
+                                </div>
+                                <div class="card-body col-md-8">
+                                    <h5><b>Mix Karaoke Bar</b></h5>
+                                    <p><b>Description: </b>The only dedicated karaoke venue in Leeds! They have a main karaoke lounge where you can enjoy performing on our stage for FREE, plus a range of drinks deals available from 6 pm so come down and release your inner Beyonce!</p>
+                                    <p><b>Food/Drink: </b>The bars offer a wide range of beer, cider, wine and spirits.</p>
+                                    <p><b>Address: </b>28 New Briggate, LS1 6NU</p>
+                                    <a href="http://mixkaraoke.co.uk/" class="btn btn-primary text-left" role="button" target="_blank">
+                                        Link
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    90s Video Games
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../Images/90sgames-image.jpg" class="rounded float-left img-thumbnail img-responsive"
+                                        alt="90s Video Games">
+                                </div>
+                                <div class="card-body col-md-8">
+                                    <h5><b>Press Start</b></h5>
+                                    <p><b>Description: </b>Loads of classic video games to play on a multitude of systems in our dedicated gaming venue!. </p>
+                                    <p><b>Food/Drink: </b>Food will be supplied at the restaurant downstairs called <a href="https://meatliquor.com/" target="_blank">Meat Liquor</a>. Has some <b>Vegan/Vegetarian Options</b></p>
+                                    <p><b>Address: </b>Bank St, LS1 5AT</p>
+                                    <a href="http://press-start.co.uk/" class="btn btn-primary text-left" role="button" target="_blank">
+                                        Link
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Foosball
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../Images/foosball-image.jpeg" class="rounded float-left img-thumbnail img-responsive "
+                                        alt="Foosball">
+                                </div>
+                                <div class="card-body  col-md-8 ">
+                                    <h5><b>Shooters Sports Bar</b></h5>
+                                    <p><b>Description: </b>Premium sports bar displaying various live sports events.
+                                        Also has pool alongside the foosball tables.</p>
+                                    <p><b>Food/Drink: </b>Burgers, light bites, wings, ribs & some vegetarian options.
+                                        Selection of beers, wine, spirits and soft drinks.</p>
+                                    <p><b>Address: </b>123 The Headrow, LS1 5RD</p>
+                                    <a href="https://shootersportsbar.co.uk/leeds/" class="btn btn-primary text-left" role="button" target="_blank">
+                                        Link
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Pool
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../Images/pool-image.jpg" class="rounded float-left img-thumbnail img-responsive"
+                                        alt="Pool">
+                                </div>
+                                <div class="card-body col-md-8">
+                                    <h5><b>Roxy Ballroom</b></h5>
+                                    <p><b>Description: </b>Bowling alley with a nod to American 50s style, a modern computer scoring system, plus cocktail bar. Also has beer pong, pool, ping pong and mini golf.</p>
+                                    <p><b>Food/Drink: </b>Pizza, burgers and slides. Drinks include cocktails, beer, wine, spirits and soft drinks. <b>Some Vegan/Vegetarian Options</b> </p>
+                                    <p><b>Address: </b>9a Merrion St, LS1 6PQ</p>
+                                    <a href="https://www.roxyballroom.co.uk/leeds-merrion-street/" class="btn btn-primary text-left" role="button" target="_blank">
+                                        Link
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Table Tennis
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../Images/tabletennis-image.jpg" class="rounded float-left img-thumbnail img-responsive"
+                                        alt="Table Tennis">
+                                </div>
+                                <div class="card-body col-md-8">
+                                    <h5><b>Roxy Ballroom</b></h5>
+                                    <p><b>Description: </b>Bowling alley with a nod to American 50s style, a modern computer scoring system, plus cocktail bar. Also has beer pong, pool, ping pong and mini golf.</p>
+                                    <p><b>Food/Drink: </b>Pizza, burgers and slides. Drinks include cocktails, beer, wine, spirits and soft drinks. <b>Some Vegan/Vegetarian Options</b> </p>
+                                    <p><b>Address: </b>58 Boar Lane, LS1 6HW</p>
+                                    <a href="https://www.roxyballroom.co.uk/leeds-boar-lane" class="btn btn-primary text-left" role="button" target="_blank">
+                                        Link
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Bowling
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../Images/bowling-image.jpg" class="rounded float-left img-thumbnail img-responsive"
+                                        alt="Bowling">
+                                </div>
+                                <div class="card-body col-md-8">
+                                    <h5><b>Roxy Ballroom</b></h5>
+                                    <p><b>Description: </b>Bowling alley with a nod to American 50s style, a modern computer scoring system, plus cocktail bar. Also has beer pong, pool, ping pong and mini golf.</p>
+                                    <p><b>Food/Drink: </b>Pizza, burgers and slides. Drinks include cocktails, beer, wine, spirits and soft drinks. <b>Some Vegan/Vegetarian Options</b> </p>
+                                    <p><b>Address: </b>Bond St, LS1 5BQ</p>
+                                    <a href="https://www.roxylanes.co.uk/" class="btn btn-primary text-left" role="button" target="_blank">
+                                        Link
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <h4 class="text-md-left text-center">Things to do</h4>
+        <div class="row text-md-left text-center">    
+            <div class="col">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Food & Retail</h5>
+                            <p class="card-text">Food and shopping options Leeds has to offer.</p>
+                            <a href="social-foodretail.html" class="btn btn-primary text-left" role="button">
+                                More
+                            </a>
+                        </div>
+                        <img class="card-img-top img-thumbnail" src="../Images/food-image.jpg" alt="Food" >
+                    </div>
+                </div>
+            </div>        
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bars & Clubs</h5>
+                        <p class="card-text">More on the Leeds late afternoon and nightlife.</p>
+                        <a href="social-barsclubs.html" class="btn btn-primary text-left" role="button">
+                            More
+                        </a>
+                    </div>
+                    <img class="card-img-top img-thumbnail" src="../Images/drinks-image.jpg" alt="Bar" >
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <img src="../Images/up.png" onclick="topFunction()" id="myTopBtn" title="Go to top">
+    </div>
+</body>
+
+</html>

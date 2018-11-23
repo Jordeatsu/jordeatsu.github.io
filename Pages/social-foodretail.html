@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Proctor & Gamble IT Face-to-Face</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="../Additional_Features/bootbox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="jquery.bcSwipe.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../Images/P&G Logo.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/Jordan_Stylesheet.css">
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myTopBtn").style.display = "block";
+            } else {
+                document.getElementById("myTopBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+
+    <style>
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23146eff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23146eff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-indicators li {
+        background-color: #999;
+        background-color: rgba(70,70,70,.25);
+    }
+
+    .carousel-indicators {
+        bottom:-50px;
+    }
+
+    .carousel-inner {
+        margin-bottom:50px;
+    }
+
+    .carousel-indicators .active {
+        background-color: #444;
+    }
+
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark">
+        <a class="navbar-brand" href="main">
+            <img src="../Images/P&G Logo.png" style="height:35px;">
+            P&G IT Face-to-Face
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="game">Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course">Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="daytoday">Day to Day Groups</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="social-main">Social Hub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forum">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="403">In Development</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="background: #f9f9f9; border-radius: 10px; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); margin-top: 10px; margin-bottom: 40px;">
+        <div class="row" style="text-align: center">
+            <div class="col">
+                <h1>UK IT F2F - Social</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row text-md-left text-center">
+            <div class="col">
+                <h4>Food & Retail</h4>
+                <p>
+                    This page contains information on food and retail places of interest in Leeds.
+                </p>
+                <a href="social-main.html" class="btn btn-primary text-left" role="button">
+                    Return To Main Social Page
+                </a>
+            </div>
+        </div>
+        <br>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h5 class="text-center">Food</h5>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pieminister</h5>
+                                    <p class="card-text">Home to the legendary Mothership and Tower of Power, this is two floors of pie heaven.</p>
+                                    <a href="https://fazenda.co.uk/leeds/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/pie-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fazenda</h5>
+                                    <p class="card-text">Servers carve 15 types of grilled meat at your table with a wide range of salads and hot dishes.</p>
+                                    <a href="https://www.pieminister.co.uk/restaurants/leeds/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                    <img class="card-img-top img-thumbnail" src="../Images/fazenda-image.jpg" alt="Bar" >
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Barburrito</h5>
+                                    <p class="card-text">Creating fresh burritos your way and with extra gusto since 2005. Come and visit us for nachos, tacos, Power Bowls and the best burritos in town.</p>
+                                    <a href="https://barburrito.co.uk/restaurants/leeds-boar-lane/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/burrito-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        <h5 class="text-center">Vegan Friendly Food</h5>
+                    <div class="row">
+                            
+                        <div class="col">
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roots and Fruits</h5>
+                                    <p class="card-text">Light and airy cafe within Grand Arcade for vegetarian and vegan food and a wide menu of exotic tea.</p>
+                                    <a href="http://www.rootsandfruits.net/menu" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/roots-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Humpit</h5>
+                                    <p class="card-text">Hummus & Pitta Bar, Vegan Friendly.</p>
+                                    <a href="https://humpit-hummus.com/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/humpit-image.jpg" alt="Bar" >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hansa's Restaurant</h5>
+                                    <p class="card-text">Simply designed restaurant and cookery school for vegetarian food or full-meal thali for 6 or more.</p>
+                                    <a href="http://hansasrestaurant.com/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/hansas-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        <h5 class="text-center">Retail</h5>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Trinity Leeds</h5>
+                                    <p class="card-text">Leeds' premier shopping centre in the heart of the city. With hundreds of shops to browse, cuisines to taste and things to do.</p>
+                                    <a href="https://trinityleeds.com/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/trinity-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Leeds Corn Exchange</h5>
+                                    <p class="card-text">If you want one off fashion pieces, vintage delights and quirky gifts then head to the Corn Exchange.</p>
+                                    <a href="https://www.leedscornexchange.co.uk/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/exchange-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Victoria Leeds</h5>
+                                    <p class="card-text">If you're looking for luxury buys, head to Victoria Leeds. Victoria Leeds is home to both Victoria Quarter and Leeds' newest retail destination Victoria Gate.</p>
+                                    <a href="https://www.victorialeeds.co.uk/" class="btn btn-primary text-left" role="button">
+                                        Link
+                                    </a>
+                                </div>
+                                <img class="card-img-top img-thumbnail" src="../Images/victoria-image.jpg" alt="Bar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <img src="../Images/up.png" onclick="topFunction()" id="myTopBtn" title="Go to top">
+    </div>
+
+
+</body>
+
+</html>

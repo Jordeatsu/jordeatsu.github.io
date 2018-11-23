@@ -53,7 +53,7 @@ body.cd-overlay::after {
 }
 
 a {
-  color: #a9c056;
+  color: #4e5359;
   text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ header h1 {
   display: inline-block;
   height: 1px;
   width: 10px;
-  background-color: #7f868e;
+  background-color: #4e5359;
 }
 .cd-faq-categories a::after {
   -webkit-transform: rotate(90deg);
@@ -192,7 +192,7 @@ header h1 {
     transition: opacity 0.2s;
   }
   .cd-faq-categories .selected {
-    background: #42464b !important;
+    background: #4e5359 !important;
   }
   .cd-faq-categories .selected::before {
     opacity: 1;
